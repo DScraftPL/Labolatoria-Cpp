@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits> //bibiloteka zawierająca informacje o typach w C++
 
 using namespace std;
 
@@ -17,10 +18,9 @@ class Student
 
 int main()
 {
-    Student s1;
-    s1.imie = "kacper";
-    s1.nazwisko = "wiacek";
-    s1.wiek = 18;
-    s1.show();
+    float a = 10;
+    int b = static_cast<int>(a);
+    int& ref = b; //referencja
+    cout << b << " " << ref << endl;
     return 0;
 }
