@@ -11,6 +11,18 @@ ZLab02::ZLab02()
 
 }
 
+student::student(string i, string n, int w , int d , int l) 
+{
+    //wskaźnik this na obiekt
+    //powinno byc this->imie = i;
+    //ale kompilator robi to za nas :)
+    imie = i;
+    nazwisko = n;
+    wiek = w;
+    dochod = d;
+    liczbaOsob = l;
+}
+
 void ZLab02::zadanie_2_3()
 {
     int a = 0;
