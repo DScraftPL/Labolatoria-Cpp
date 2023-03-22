@@ -136,4 +136,18 @@ class ZLab02
     
 };
 
+class test
+{
+    private:
+        test();
+    public:
+        static test& create()
+        {
+            static test t;
+            return t;
+        }
+        //tl;dr tworzymy nową referencje do obiektu, nie nowy obiekt, obiekt jest statynczy LOL
+};
+
 #endif //KLASY_H
+
